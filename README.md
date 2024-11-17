@@ -21,3 +21,19 @@ This document explains the concept of **GSAP ScrollTrigger**, a powerful plugin 
 - **Pinning Elements:** You can "pin" elements in place while scrolling, which makes them stay in view during the scroll.
   
 ---
+## Basic Concept
+
+When an element comes into view as the user scrolls, you can trigger an animation. Similarly, you can create animations that happen when the scroll reaches a certain point on the page.
+
+### Common ScrollTrigger Options:
+
+- **`trigger`:** The target element that will activate the animation when it enters or exits the viewport.
+- **`start`:** Defines when the animation should start relative to the scroll position (e.g., `"top bottom"` means the animation starts when the top of the trigger element reaches the bottom of the viewport).
+- **`end`:** Defines when the animation should end relative to the scroll position (e.g., `"bottom top"` means the animation ends when the bottom of the trigger element reaches the top of the viewport).
+- **`scrub`:** If `true`, the animation will be tied directly to the scroll position, creating a smooth, scrubbed animation.
+- **`pin`:** You can pin an element in place while the user scrolls.
+- **`markers`:** Adds debug markers to the page so you can see where the triggers occur.
+
+---
+
+## Example of ScrollTrigger Animation
